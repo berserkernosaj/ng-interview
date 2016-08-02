@@ -4,10 +4,10 @@ describe('ngInterview.api.students', function() {
 
 	beforeEach(module('ngInterview.api.students'));
 
-	describe('studentsService', function() {
+	describe('StudentsService', function() {
 
-		it('should be instantiated', inject(function(studentsService) {
-			expect(studentsService).toBeDefined();
+		it('should be instantiated', inject(function(StudentsService) {
+			expect(StudentsService).toBeDefined();
 		}));
 
 	});

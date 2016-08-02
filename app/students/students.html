@@ -1,4 +1,22 @@
+<section class="main">
+
 <h2>Students</h2>
-<ul>
-	<li>Here are your students...</li>
+<label>Search: <input type ="text" ng-model="searchName"></label>
+<ul class="mainList">
+	<li class="mainListItem" ng-repeat="student in students| filter:searchName track by $index" ng-click="detailToggle($index)">
+		{{student.FirstName}} {{student.LastName}}
+		<ul ng-show="details[$index]">
+		<li>
+			Favorite Color:{{student.FavoriteColor}}
+		</li>
+		<li>
+			Favorite Food:{{student.FavoriteFood}}
+		</li>
+		<li>
+			Favorite Movie:{{student.FavoriteMovie}}
+		</li>
+
+		</ul>
+	</li>
 </ul>
+</section>
