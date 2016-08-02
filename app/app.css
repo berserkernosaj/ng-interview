@@ -1,1 +1,19 @@
 /* app css stylesheet */
+.main{
+  width: vw;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.mainList :hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.mainList{
+  list-style-type: none;
+
+}
+.mainListItem {
+  padding: 5px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
